@@ -47,10 +47,10 @@ RUN systemctl enable greetd.service && \
     systemctl set-default graphical.target
 
 # Copy and run Noctali-greeter to niri
-COPY examples/niri/config/greetd/config.toml /etc/greetd/config.toml
+COPY examples/niri/greetd.toml /etc/greetd/config.toml
 
 # Creates a systemwide config for Niri and start Noctalia
-COPY examples/niri/config/niri/config.kdl /etc/niri/config.kdl
+COPY examples/niri/niri.kdl /etc/niri/config.kdl
 
 # Cleanup (leave this here)
 RUN rm -rf /var && \
