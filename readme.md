@@ -11,7 +11,7 @@ Anatase also provides a base image (`i.anatase.org/base:stable`) which is the sa
 ## Using the template
 To use this template, select `Use this template`, clone it, or clone this repository:
 ```bash
-git clone https://github.org/anatase-org/template my-anatase
+git clone https://github.com/anatase-org/template my-anatase
 cd my-anatase
 ```
 
