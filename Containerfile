@@ -5,9 +5,8 @@ FROM i.anatase.org/anatase:stable
 # RUN dnf -y install btop
 
 # Install coolercontrol
-# # For COPRs specify fedora-* as dnf will try to look for an anatase COPR
 # RUN . /etc/os-release && \
-#     dnf -y copr enable codifryed/CoolerControl "fedora-${VERSION_ID}-$(arch)" && \
+#     dnf -y copr enable codifryed/CoolerControl && \
 #     dnf -y install coolercontrol && \
 #     systemctl enable coolercontrold
 
